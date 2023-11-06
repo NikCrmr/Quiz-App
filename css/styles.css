@@ -51,11 +51,14 @@ div {
   height: 250px;
   background-color: limegreen;
   text-align: center;
+  position: relative;
 }
 
 .bkmrkicon {
   position: absolute;
-  right: 2px;
+  right: 0;
+  top: 0;
+  width: 70px;
 }
 
 .answer-button {
