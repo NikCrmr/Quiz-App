@@ -6,7 +6,7 @@
 
 body {
   margin: 0 auto;
-  width: 50%;
+  /*width: 50%; */
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: blanchedalmond;
 }
@@ -54,7 +54,6 @@ div {
 
 .bkmrkicon {
   position: absolute;
-  right: 1px;
 }
 
 .answer-button {
