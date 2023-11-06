@@ -142,3 +142,12 @@ nav a {
 img header:hover {
   width: 200%;
 }*/
+
+/*PROFILE PAGE */
+
+.profile {
+  height: 300px;
+  width: 80%;
+  background-color: blanchedalmond;
+  border: 2px solid white;
+}
