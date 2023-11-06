@@ -1,2 +1,2 @@
 function show(){
-document.getElementbyId("showanswer").innerHTML = "I am the answer!";}
+document.getElementById("showanswer").innerHTML = "I am the answer!";}
