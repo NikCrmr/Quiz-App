@@ -43,7 +43,9 @@ div {
   border-radius: 20%;
 }
 .bookmark {
+  font-weight: 600;
   margin: 20px;
+  padding-top: 7.5%;
   width: 80%;
   height: 250px;
   background-color: green;
@@ -53,6 +55,16 @@ div {
 .bkmrkicon {
   position: absolute;
   right: 1px;
+}
+
+.answer-button {
+  background-color: yellow;
+  color: black;
+  font-weight: bold;
+  letter-spacing: 1rem;
+  border-radius: 12%;
+  height: 20%;
+  padding: 2px 5px;
 }
 
 footer {
