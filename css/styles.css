@@ -49,6 +49,8 @@ div {
   padding-top: 7.5%;
   width: 80%;
   height: 250px;
+  max-width: 450px;
+  align-self: center;
   background-color: limegreen;
   text-align: center;
   position: relative;
@@ -56,18 +58,19 @@ div {
 
 .bkmrkicon {
   position: absolute;
-  right: 0;
-  top: 0;
-  width: 70px;
+  right: -15px;
+  top: -33px;
+  width: 120px;
 }
 
 .answer-button {
   background-color: yellow;
   color: black;
   font-weight: bold;
-  letter-spacing: 1rem;
-  border-radius: 15%;
-  height: 20%;
+  letter-spacing: 0.5rem;
+  border: 2px solid white;
+  border-radius: 25px;
+  height: 24%;
   padding: 2px 5px;
 }
 
