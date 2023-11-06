@@ -41,24 +41,27 @@ main {
 
 div {
   height: 200px;
-  border-radius: 20%;
+  border-radius: 50px;
+  margin: 20px;
 }
+
 .bookmark {
   font-weight: 600;
-  margin: 20px;
   padding-top: 7.5%;
-  width: 80%;
   height: 250px;
+  width: 80%;
   max-width: 450px;
   align-self: center;
   background-color: limegreen;
   text-align: center;
   position: relative;
+  /*border: 3px solid white;
+  box-shadow: 2px 3.5px white;*/
 }
 
 .bkmrkicon {
   position: absolute;
-  right: -15px;
+  right: -19px;
   top: -33px;
   width: 120px;
 }
@@ -67,7 +70,7 @@ div {
   background-color: yellow;
   color: black;
   font-weight: bold;
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.5em;
   border: 2px solid white;
   border-radius: 25px;
   height: 24%;
@@ -88,10 +91,15 @@ div {
 
 .category {
   background-color: white;
-  border: 1;
+  border: 1px;
   border-color: white;
+  border-radius: 50px;
   box-shadow: 2px 2px;
   margin: 1rem;
+  /*position: absolute;
+  left: -2px;
+  display: flex;
+  align-content: space-between;*/
 }
 
 .category:hover {
