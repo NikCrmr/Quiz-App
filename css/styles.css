@@ -47,7 +47,7 @@ div {
   font-weight: 600;
   margin: 20px;
   padding-top: 7.5%;
-  width: 80%;
+  width: 70%;
   height: 250px;
   background-color: limegreen;
   text-align: center;
@@ -58,7 +58,7 @@ div {
   position: absolute;
   right: 0;
   top: 0;
-  width: 70px;
+  width: 100px;
 }
 
 .answer-button {
