@@ -150,10 +150,29 @@ img header:hover {
   width: 200%;
 }*/
 
-/*PROFILE PAGE */
+/*
+*************************
+* **~ PROFILE PAGE ~ ** * 
+------************-------
+*/
+
+.toggle_color-mode {
+  width: 80%;
+  height: 2rem;
+  border: none black;
+  display: flex;
+  justify-content: center;
+  margin-top: -1.55rem;
+  margin-bottom: 0rem;
+}
+.toggle_color-mode > button {
+  background-color: antiquewhite;
+  border-radius: 15px;
+  border: 0.5px dotted black;
+}
 
 .profile {
-  margin-top: 3.125rem;
+  margin-top: 0.3rem;
   height: 460px;
   width: 80%;
   background-color: blanchedalmond;
@@ -187,6 +206,7 @@ img header:hover {
 }
 
 .counter_div {
+  margin-top: 2rem;
   background-color: none;
   border: 2px dotted black;
   height: 5.5rem;
@@ -304,4 +324,14 @@ img header:hover {
 }
 @media (min-width: 1281px) {
   /* hi-res laptops and desktops  */
+}
+
+/*
+*** - JAVASCRIPT - *********
+TOGGLE COLOR-MODE JAVASCRIPT
+*/
+
+.alt-color {
+  background-color: black;
+  color: white;
 }
