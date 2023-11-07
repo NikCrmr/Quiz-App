@@ -211,6 +211,11 @@ img header:hover {
 /* MEDIA QUERRY SECTION */
 
 @media (min-width: 375px) {
+  header {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
   nav img {
     width: 14%;
   }
