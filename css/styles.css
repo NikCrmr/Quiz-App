@@ -181,3 +181,24 @@ img header:hover {
   top: 55%;
   right: 8.5%;
 }
+
+.counter_div {
+  background-color: chartreuse;
+  height: 5.5rem;
+  width: 8rem;
+  position: absolute;
+  top: 71%;
+  right: 22%;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.bookmark-counter-pic {
+  height: 30px;
+}
+
+.bookmark-counter {
+  position: absolute;
+  padding: 1rem;
+}
