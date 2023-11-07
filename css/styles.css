@@ -203,3 +203,11 @@ img header:hover {
   position: absolute;
   padding: 1rem;
 }
+
+/* MEDIA QUERRY SECTION */
+
+@media (max-width: 375px) {
+  nav img {
+    width: 10%;
+  }
+}
