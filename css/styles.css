@@ -13,12 +13,12 @@ body {
 
 header {
   width: 100%;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 1.875rem;
+  padding-bottom: 1.875rem;
   border: 5px;
   border-color: black;
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 1.563rem;
+  border-bottom-right-radius: 1.563rem;
   background-color: lightblue;
   opacity: 95%;
   position: sticky;
@@ -33,7 +33,7 @@ h1 {
   -webkit-text-stroke-width: 1.5px;
   -webkit-text-stroke-color: black;
   font-weight: 800;
-  font-size: 33pt;
+  font-size: 2.75rem;
 }
 
 main {
@@ -47,12 +47,15 @@ main {
 div {
   height: 200px;
   border-radius: 50px;
-  margin: 20px;
+  margin: 1.25rem;
 }
 
 div > h3 {
-  margin-top: -20px;
-  margin-bottom: 40px;
+  margin-top: -1.25rem;
+  margin-bottom: 2.5rem;
+  -webkit-text-stroke-width: 0.04rem;
+  -webkit-text-stroke-color: white;
+  font-size: 1.59rem;
 }
 
 .bookmark {
@@ -85,7 +88,7 @@ div > h3 {
   border-radius: 25px;
   width: 190px;
   height: 24%;
-  padding: 2px 5px;
+  padding: 4px 5px;
 }
 
 .answer-button:hover {
@@ -97,8 +100,8 @@ div > h3 {
   font-style: italic;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 17px;
-  padding-top: 10px;
+  font-size: 1.0625rem;
+  padding-top: 0.625rem;
 }
 
 .category {
@@ -122,7 +125,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1px;
+  gap: 0, 1875rem;
   position: fixed;
   background-color: lightblue;
   opacity: 97%;
@@ -150,17 +153,65 @@ img header:hover {
 /*PROFILE PAGE */
 
 .profile {
-  margin-top: 50px;
-  height: 300px;
+  margin-top: 3.125rem;
+  height: 460px;
   width: 80%;
   background-color: blanchedalmond;
   border: 4px solid white;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .profile_img {
   min-width: 300px;
   max-width: 600px;
+  position: absolute;
+  top: 13%;
+  right: 55%;
+}
+
+.profile_username {
+  font-size: 2.125rem;
+  position: absolute;
+  top: 129px;
+  right: 30%;
+}
+
+.about-me_profile {
+  max-width: 40%;
+  position: absolute;
+  top: 55%;
+  right: 8.5%;
+}
+
+.counter_div {
+  background-color: none;
+  border: 2px dotted black;
+  height: 5.5rem;
+  width: 8rem;
+  position: absolute;
+  top: 71%;
+  right: 22%;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.bookmark-counter-pic {
+  height: 30px;
+}
+
+.bookmark-counter {
+  position: absolute;
+  padding: 1rem;
+}
+
+/* MEDIA QUERRY SECTION */
+
+@media (min-width: 375px) {
+  nav img {
+    width: 14%;
+  }
 }
