@@ -165,7 +165,7 @@ img header:hover {
 }
 
 .profile_img {
-  min-width: 300px;
+  min-width: 100px;
   max-width: 600px;
   position: absolute;
   top: 13%;
@@ -224,4 +224,67 @@ img header:hover {
   h1 {
     font-size: 2rem;
   }
+  /* Media Query Profile.html */
+  .profile {
+    max-width: 95%;
+  }
+  .profile_img {
+    width: 45%;
+    top: 10%;
+    margin-top: -1.5rem;
+  }
+  .profile_username {
+    width: 18%;
+    top: 10%;
+  }
+  .about-me_profile {
+    max-width: 80%;
+    left: 10%;
+    margin-top: -2.5rem;
+  }
+}
+/*MEDIA QUERY Laptop and Desktop */
+@media (min-width: 961px) {
+  .profile_img {
+    min-width: none;
+    max-width: 21.5%;
+    top: 9%;
+  }
+  .about-me_profile {
+    max-width: 40%;
+    left: 50%;
+    transform: translate(50, 50);
+  }
+  .counter_div {
+    left: 40%;
+  }
+  nav img {
+    width: 25%;
+  }
+}
+@media (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+}
+@media (min-width: 1281px) {
+  /* hi-res laptops and desktops  */
+}
+
+/*Media Query Cheats */
+@media (min-width: 320px) {
+  /* smartphones, iPhone, portrait 480x320 phones */
+}
+@media (min-width: 481px) {
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+}
+@media (min-width: 641px) {
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+}
+@media (min-width: 961px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
+@media (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+}
+@media (min-width: 1281px) {
+  /* hi-res laptops and desktops  */
 }
