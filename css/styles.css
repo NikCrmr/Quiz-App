@@ -221,4 +221,7 @@ img header:hover {
   div > h3 {
     font-size: 1.4rem;
   }
+  h1 {
+    font-size: 2rem;
+  }
 }
