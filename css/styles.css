@@ -206,6 +206,7 @@ img header:hover {
 }
 
 .counter_div {
+  margin-top: 2rem;
   background-color: none;
   border: 2px dotted black;
   height: 5.5rem;
