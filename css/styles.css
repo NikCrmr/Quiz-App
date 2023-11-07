@@ -147,16 +147,27 @@ img header:hover {
 
 .profile {
   margin-top: 50px;
-  height: 300px;
+  height: 460px;
   width: 80%;
   background-color: blanchedalmond;
   border: 4px solid white;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .profile_img {
   min-width: 300px;
   max-width: 600px;
+  position: absolute;
+  top: 13%;
+  right: 55%;
+}
+
+.profile_username {
+  font-size: 25pt;
+  position: absolute;
+  top: 129px;
+  right: 30%;
 }
