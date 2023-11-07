@@ -211,6 +211,9 @@ img header:hover {
 /* MEDIA QUERRY SECTION */
 /*Mobile*/
 @media (min-width: 375px) {
+  main {
+    margin-top: 2rem;
+  }
   header {
     padding-top: 1rem;
     padding-bottom: 1rem;
