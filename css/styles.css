@@ -229,6 +229,10 @@ img header:hover {
   h1 {
     font-size: 2rem;
   }
+  .bookmark-counter {
+    position: absolute;
+    padding-top: 2rem;
+  }
   /* Media Query Profile.html */
   .profile {
     max-width: 95%;
