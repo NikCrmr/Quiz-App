@@ -146,8 +146,17 @@ img header:hover {
 /*PROFILE PAGE */
 
 .profile {
+  margin-top: 50px;
   height: 300px;
   width: 80%;
   background-color: blanchedalmond;
-  border: 2px solid white;
+  border: 4px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile_img {
+  min-width: 300px;
+  max-width: 600px;
 }
