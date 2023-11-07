@@ -325,3 +325,13 @@ img header:hover {
 @media (min-width: 1281px) {
   /* hi-res laptops and desktops  */
 }
+
+/*
+*** - JAVASCRIPT - *********
+TOGGLE COLOR-MODE JAVASCRIPT
+*/
+
+.alt-color {
+  background-color: black;
+  color: white;
+}
