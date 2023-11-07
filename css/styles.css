@@ -333,6 +333,7 @@ TOGGLE COLOR-MODE JAVASCRIPT
 
 .alt-color {
   background-color: black;
-  color: darkblue;
-  display: block;
+  color: blue;
+  -webkit-text-stroke-width: 0.04rem;
+  -webkit-text-stroke-color: greenyellow;
 }
