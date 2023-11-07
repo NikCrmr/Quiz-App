@@ -206,8 +206,8 @@ img header:hover {
 
 /* MEDIA QUERRY SECTION */
 
-@media (max-width: 375px) {
+@media (min-width: 375px) {
   nav img {
-    width: 10%;
+    width: 14%;
   }
 }
