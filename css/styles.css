@@ -122,7 +122,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 3px;
+  gap: 0, 1875rem;
   position: fixed;
   background-color: lightblue;
   opacity: 97%;
@@ -146,7 +146,7 @@ img header:hover {
 /*PROFILE PAGE */
 
 .profile {
-  margin-top: 50px;
+  margin-top: 3.125rem;
   height: 460px;
   width: 80%;
   background-color: blanchedalmond;
@@ -166,7 +166,7 @@ img header:hover {
 }
 
 .profile_username {
-  font-size: 25pt;
+  font-size: 2.125rem;
   position: absolute;
   top: 129px;
   right: 30%;
