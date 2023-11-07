@@ -231,7 +231,7 @@ img header:hover {
   }
   .bookmark-counter {
     position: absolute;
-    padding-top: 2rem;
+    margin-top: 3rem;
   }
   /* Media Query Profile.html */
   .profile {
