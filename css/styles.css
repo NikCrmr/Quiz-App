@@ -211,6 +211,11 @@ img header:hover {
 /* MEDIA QUERRY SECTION */
 
 @media (min-width: 375px) {
+  header {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
   nav img {
     width: 14%;
   }
@@ -223,6 +228,10 @@ img header:hover {
   }
   h1 {
     font-size: 2rem;
+  }
+  .bookmark-counter {
+    position: absolute;
+    padding-top: 2rem;
   }
   /* Media Query Profile.html */
   .profile {
