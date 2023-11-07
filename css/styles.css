@@ -171,3 +171,10 @@ img header:hover {
   top: 129px;
   right: 30%;
 }
+
+.about-me_profile {
+  max-width: 40%;
+  position: absolute;
+  top: 55%;
+  right: 8.5%;
+}
