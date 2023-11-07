@@ -209,7 +209,7 @@ img header:hover {
 }
 
 /* MEDIA QUERRY SECTION */
-
+/*Mobile*/
 @media (min-width: 375px) {
   header {
     padding-top: 1rem;
@@ -229,11 +229,8 @@ img header:hover {
   h1 {
     font-size: 2rem;
   }
-  .bookmark-counter {
-    position: absolute;
-    margin-top: 3rem;
-  }
-  /* Media Query Profile.html */
+
+  /* Media Query Profile.html MOBILE-*/
   .profile {
     max-width: 95%;
   }
@@ -252,7 +249,7 @@ img header:hover {
     margin-top: -2.5rem;
   }
 }
-/*MEDIA QUERY Laptop and Desktop */
+/*MEDIA QUERY - LAPTOP and DESKTOP */
 @media (min-width: 961px) {
   .profile_img {
     min-width: none;
@@ -272,6 +269,10 @@ img header:hover {
   }
   .profile {
     width: 45%;
+  }
+  .bookmark-counter {
+    position: absolute;
+    padding-top: 2rem;
   }
 }
 @media (min-width: 1025px) {
