@@ -183,7 +183,8 @@ img header:hover {
 }
 
 .counter_div {
-  background-color: chartreuse;
+  background-color: none;
+  border: 2px dotted black;
   height: 5.5rem;
   width: 8rem;
   position: absolute;
