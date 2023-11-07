@@ -131,6 +131,10 @@ footer {
   bottom: 0;
 }
 
+.nav_button{
+  max-width: 70px;
+  }
+
 nav a {
   padding: 0 2rem;
 }
