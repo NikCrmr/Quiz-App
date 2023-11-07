@@ -261,6 +261,9 @@ img header:hover {
   nav img {
     width: 25%;
   }
+  .profile {
+    width: 45%;
+  }
 }
 @media (min-width: 1025px) {
   /* big landscape tablets, laptops, and desktops */
