@@ -253,8 +253,9 @@ img header:hover {
 @media (min-width: 961px) {
   .profile_img {
     min-width: none;
-    max-width: 21.5%;
-    top: 9%;
+    max-width: 33%;
+    top: 22%;
+    left: 13%;
   }
   .about-me_profile {
     max-width: 40%;
