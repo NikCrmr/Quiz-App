@@ -15,10 +15,6 @@ function changeBmrk() {
   if (image.src.match("img/bookunmrk.png")) {
     image.src = "img/bookmrk.png";
     console.log("first-if-bookunmrk");
-  }
-  if (image.src.match("img/bookunmrk.png")) {
-    image.src = "img/bookmrk.png";
-    console.log("if-bookmrk");
   } else {
     image.src = "img/bookunmrk.png";
     console.log("else-bookunmrk");
