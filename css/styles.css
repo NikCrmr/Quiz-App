@@ -245,6 +245,7 @@ img header:hover {
   .bkmrkicon {
     width: 20%;
     top: -40px;
+    cursor: pointer;
   }
   div > h3 {
     font-size: 1.4rem;

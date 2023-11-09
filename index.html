@@ -12,7 +12,13 @@
     </header>
     <main>
       <div class="bookmark" aria-labelledby="Quizcard">
-        <img src="img/bookmrk.png" alt="checked bookmark" class="bkmrkicon" />
+        <img
+          src="img/bookmrk.png"
+          alt="checked bookmark"
+          class="bkmrkicon"
+          id="check_bkmrk"
+          onclick="changeBmrk()"
+        />
         <h3>This is my Question?</h3>
         <button onclick="show()" class="answer-button" aria-label="Show Answer">
           Show Answer
@@ -35,7 +41,12 @@
           class="bkmrkicon"
         />
         <h3>This is my Question?</h3>
-        <button class="answer-button" id="showanswer" aria-label="Show Answer">
+        <button
+          class="answer-button"
+          onclick="changeBmrk()"
+          id="showanswer"
+          aria-label="Show Answer"
+        >
           Show Answer
         </button>
         <p class="showanswer" id="showanswer">
