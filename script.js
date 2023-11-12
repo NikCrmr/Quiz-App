@@ -21,4 +21,12 @@ function changeBmrk() {
   }
 }
 
-// i cant make it work both way why????
+//COUNTER ***************
+const likeButton = document.getElementById("check_bkmrk");
+const likeCount = document.getElementById("bookmark-count");
+let count = 0;
+
+likeButton.addEventListener("click", () => {
+  count++;
+  likeCount.innerText = count;
+});
