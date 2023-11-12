@@ -22,11 +22,14 @@ function changeBmrk() {
 }
 
 //COUNTER ***************
-const likeButton = document.getElementById("check_bkmrk");
-const likeCount = document.getElementById("bookmark-count");
+const bookmarkButton = document.getElementById("check_bkmrk");
+const bookmarkCount = document.getElementById("bookmark-count");
 let count = 0;
 
-likeButton.addEventListener("click", () => {
+bookmarkButton.addEventListener("click", () => {
   count++;
-  likeCount.innerText = count;
+  bookmarkCountCount.innerText = count;
 });
+
+// <button id="likeButton">Like</button>
+// <span id="likeCount">0</span>
