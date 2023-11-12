@@ -53,6 +53,19 @@ footer {
   max-width: 60px;
 }
 
+.nav_button_home {
+  border: 3px dotted rgb(255, 255, 255);
+  max-width: 57px;
+}
+.nav_button_bookmark {
+  border: 3px dotted rgb(255, 255, 255);
+  max-width: 56px;
+}
+.nav_button_profile {
+  border: 3px dotted rgb(255, 255, 255);
+  max-width: 56px;
+}
+
 nav a {
   padding: 0 2rem;
 }
