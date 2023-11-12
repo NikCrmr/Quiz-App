@@ -28,7 +28,7 @@ let count = 0;
 
 bookmarkButton.addEventListener("click", () => {
   count++;
-  bookmarkCountCount.innerText = count;
+  bookmarkCount.innerText = count;
 });
 
 // <button id="likeButton">Like</button>
