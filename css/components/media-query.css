@@ -40,7 +40,13 @@
   .about-me_profile {
     max-width: 80%;
     left: 10%;
-    margin-top: -2.5rem;
+    margin-top: -4rem;
+  }
+  .counter_div {
+    top: 75%;
+    border: 1px dotted black;
+    height: 4.8rem;
+    width: 7rem;
   }
 }
 
