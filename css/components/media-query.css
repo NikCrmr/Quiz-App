@@ -1,1 +1,128 @@
-/*didnt work destroyed my page layout*/
+/* MEDIA QUERRY SECTION */
+/*Mobile*/
+@media (min-width: 375px) {
+  main {
+    margin-top: 2rem;
+  }
+  header {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  nav img {
+    width: 14%;
+  }
+  .bkmrkicon {
+    width: 20%;
+    top: -40px;
+    cursor: pointer;
+  }
+  div > h3 {
+    font-size: 1.4rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+
+  /* Media Query Profile.html MOBILE-*/
+  .profile {
+    max-width: 95%;
+  }
+  .profile_img {
+    width: 45%;
+    top: 10%;
+    margin-top: -1.5rem;
+  }
+  .profile_username {
+    width: 18%;
+    top: 10%;
+  }
+  .about-me_profile {
+    max-width: 80%;
+    left: 10%;
+    margin-top: -2.5rem;
+  }
+}
+
+/*MEDIA QUERY - LAPTOP and DESKTOP */
+@media (min-width: 961px) {
+  .profile_img {
+    min-width: none;
+    max-width: 33%;
+    top: 22%;
+    left: 13%;
+  }
+  .about-me_profile {
+    max-width: 40%;
+    left: 50%;
+    transform: translate(50, 50);
+  }
+  .counter_div {
+    left: 40%;
+  }
+  nav img {
+    width: 25%;
+  }
+  .profile {
+    width: 45%;
+  }
+  .bookmark-counter {
+    position: absolute;
+    padding-top: 2rem;
+  }
+}
+@media (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+}
+@media (min-width: 1281px) {
+  /* hi-res laptops and desktops  */
+}
+
+/*Media Query Cheats */
+@media (min-width: 320px) {
+  /* smartphones, iPhone, portrait 480x320 phones */
+}
+@media (min-width: 481px) {
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+}
+
+@media (min-width: 519px) {
+  .profile_img {
+    width: 40%;
+    top: 5%;
+    left: 10%;
+  }
+}
+@media (min-width: 641px) {
+  .about-me_profile {
+    font-size: 0.85rem;
+    letter-spacing: 0.08rem;
+    top: 49%;
+    left: 45%;
+    width: 14rem;
+  }
+
+  *.counter_div {
+    left: 10%;
+  }
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+}
+@media (min-width: 961px) {
+  .about-me_profile {
+    font-size: 0.85rem;
+    letter-spacing: 0.08rem;
+    top: 46%;
+    width: 14rem;
+  }
+
+  *.counter_div {
+    left: 10%;
+  }
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
+@media (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+}
+@media (min-width: 1281px) {
+  /* hi-res laptops and desktops  */
+}

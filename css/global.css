@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+:root {
+  --main-bg: #ffebcc;
+  --bg-col2: #add8e6;
+}
+
 body {
   margin: 0 auto;
   /*width: 50%; */
