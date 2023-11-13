@@ -10,7 +10,7 @@
   border: none black;
   display: flex;
   justify-content: center;
-  margin-top: -1.55rem;
+  margin-top: 0.3rem;
   margin-bottom: 0rem;
 }
 .toggle_color-mode > button {
@@ -35,7 +35,7 @@
   min-width: 100px;
   max-width: 600px;
   position: absolute;
-  top: 13%;
+  top: 45%;
   right: 55%;
 }
 

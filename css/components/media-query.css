@@ -85,10 +85,39 @@
 @media (min-width: 481px) {
   /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
 }
+
+@media (min-width: 519px) {
+  .profile_img {
+    width: 40%;
+    top: 5%;
+    left: 10%;
+  }
+}
 @media (min-width: 641px) {
+  .about-me_profile {
+    font-size: 0.85rem;
+    letter-spacing: 0.08rem;
+    top: 49%;
+    left: 45%;
+    width: 14rem;
+  }
+
+  *.counter_div {
+    left: 10%;
+  }
   /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
 }
 @media (min-width: 961px) {
+  .about-me_profile {
+    font-size: 0.85rem;
+    letter-spacing: 0.08rem;
+    top: 46%;
+    width: 14rem;
+  }
+
+  *.counter_div {
+    left: 10%;
+  }
   /* tablet, landscape iPad, lo-res laptops ands desktops */
 }
 @media (min-width: 1025px) {
