@@ -8,9 +8,14 @@ div > h3 {
   margin-top: -1.25rem;
   margin-bottom: 2.5rem;
   padding: 0 1rem;
-  -webkit-text-stroke-width: 0.04rem;
-  -webkit-text-stroke-color: white;
+  color: white;
+  -webkit-text-stroke-width: 0.07rem;
+  -webkit-text-stroke-color: black;
   font-size: 1.59rem;
+  letter-spacing: 0.055rem;
+  word-spacing: 0.43rem;
+  line-height: 125%;
+  font-weight: bold;
 }
 
 .bookmark {
