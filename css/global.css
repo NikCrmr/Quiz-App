@@ -16,6 +16,14 @@ body {
   background-color: var(--main-bg);
 }
 
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -82,10 +90,10 @@ nav a {
   padding: 0 2rem;
 }
 
-/*.nav_button:hover {
-    opacity: 50%;
-  }
-  
-  img header:hover {
-    width: 200%;
-  }*/
+/* .nav_button:hover {
+  opacity: 50%;
+}
+
+img header:hover {
+  width: 200%;
+} */
