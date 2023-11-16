@@ -2,6 +2,7 @@
 
 function show() {
   document.getElementById("showanswer").innerHTML = "Swahili";
+  document.querySelector('[data-js="hide-button"]').textContent = "Hide Answer";
 }
 
 function show2() {
