@@ -1,15 +1,24 @@
 div {
+  position: relative;
   height: 200px;
   border-radius: 50px;
   margin: 1.25rem;
 }
 
 div > h3 {
-  margin-top: -1.25rem;
+  position: absolute;
+  top: 2.3rem;
+  margin-top: 0;
   margin-bottom: 2.5rem;
-  -webkit-text-stroke-width: 0.04rem;
-  -webkit-text-stroke-color: white;
+  padding: 0 1rem;
+  color: white;
+  -webkit-text-stroke-width: 0.07rem;
+  -webkit-text-stroke-color: black;
   font-size: 1.59rem;
+  letter-spacing: 0.055rem;
+  word-spacing: 0.43rem;
+  line-height: 125%;
+  font-weight: bold;
 }
 
 .bookmark {
@@ -22,8 +31,8 @@ div > h3 {
   background-color: limegreen;
   text-align: center;
   position: relative;
-  /*border: 3px solid white;
-    box-shadow: 2px 3.5px white;*/
+  border: 0.5rem solid white;
+  /* box-shadow: 2px 3.5px white;*/
 }
 
 .bkmrkicon {
