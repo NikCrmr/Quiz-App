@@ -1,8 +1,22 @@
 //Show the Answer Function!!
 
 function show() {
-  document.getElementById("showanswer").innerHTML = "Swahili";
-  document.querySelector('[data-js="hide-button"]').textContent = "Hide Answer";
+  //test new if else code
+  let answerButton = document.querySelector('[data-js="answer-button"]');
+  let answerText = document.querySelector('[data-js="answer-text"]');
+  console.log("variables created");
+  if (answerButton.textContent.match("Show Answer")) {
+    console.log("It is a match!");
+    document.getElementById("showanswer").innerHTML = "Swahili";
+    document.querySelector('[data-js="answer-button"]').textContent =
+      "Hide Answer";
+  } else if (answerButton.textContent.match("Hide Answer")) {
+    document.getElementById("showanswer").innerHTML =
+      "here you will see the answer...";
+    document.querySelector('[data-js="answer-button"]').textContent =
+      "Show Answer";
+  }
+  //test block ****
 }
 
 function show2() {
