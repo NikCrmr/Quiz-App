@@ -1,11 +1,14 @@
 div {
+  position: relative;
   height: 200px;
   border-radius: 50px;
   margin: 1.25rem;
 }
 
 div > h3 {
-  margin-top: -1.25rem;
+  position: absolute;
+  top: 2.3rem;
+  margin-top: 0;
   margin-bottom: 2.5rem;
   padding: 0 1rem;
   color: white;
