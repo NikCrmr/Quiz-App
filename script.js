@@ -28,13 +28,46 @@ function colorMode() {
 //Switch the Bookmark between checked and unchecked
 
 function changeBmrk() {
-  var image = document.getElementById("check_bkmrk");
+  let image = document.getElementById("check_bkmrk");
   if (image.src.match("img/bookunmrk.png")) {
     image.src = "img/bookmrk.png";
     console.log("first-if-bookunmrk");
   } else {
     image.src = "img/bookunmrk.png";
     console.log("else-bookunmrk");
+  }
+}
+
+function changeBmrk2() {
+  let image = document.getElementById("check_bkmrk2");
+  if (image.src.match("img/bookunmrk.png")) {
+    image.src = "img/bookmrk.png";
+    console.log("first-if-bookunmrk");
+  } else if (image.src.match("img/bookmrk.png")) {
+    image.src = "img/bookunmrk.png";
+    console.log("else-if-bookunmrk");
+  }
+}
+
+function changeBmrk3() {
+  let image = document.getElementById("check_bkmrk3");
+  if (image.src.match("img/bookunmrk.png")) {
+    image.src = "img/bookmrk.png";
+    console.log("first-if-bookunmrk");
+  } else if (image.src.match("img/bookmrk.png")) {
+    image.src = "img/bookunmrk.png";
+    console.log("else-if-bookunmrk");
+  }
+}
+
+function changeBmrk4() {
+  let image = document.getElementById("check_bkmrk4");
+  if (image.src.match("img/bookunmrk.png")) {
+    image.src = "img/bookmrk.png";
+    console.log("first-if-bookunmrk");
+  } else if (image.src.match("img/bookmrk.png")) {
+    image.src = "img/bookunmrk.png";
+    console.log("else-if-bookunmrk");
   }
 }
 
