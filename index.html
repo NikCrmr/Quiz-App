@@ -11,7 +11,7 @@
       <h1 aria-labelledby="app-title">Quiz App</h1>
     </header>
     <main>
-      <div class="bookmark" aria-labelledby="Quizcard">
+      <div class="quizcard" aria-labelledby="Quizcard">
         <img
           src="img/bookmrk.png"
           alt="checked bookmark"
@@ -20,10 +20,15 @@
           onclick="changeBmrk()"
         />
         <h3>In what language is the phrase ‘Hakuna Matata’?</h3>
-        <button onclick="show()" class="answer-button" aria-label="Show Answer">
+        <button
+          onclick="show()"
+          class="answer-button"
+          data-js="answer-button"
+          aria-label="Show Answer"
+        >
           Show Answer
         </button>
-        <p class="showanswer" id="showanswer">
+        <p class="showanswer" id="showanswer" data-js="answer-text">
           here you will see the answer...
         </p>
         <div>
@@ -34,7 +39,7 @@
           <button class="category" aria-label="category css">#css</button>
         </div>
       </div>
-      <div class="bookmark" aria-labelledby="Quizcard">
+      <div class="quizcard" aria-labelledby="Quizcard">
         <img
           src="img/bookunmrk.png"
           alt="unchecked bookmark"
@@ -62,7 +67,7 @@
           <button class="category" aria-label="category css">#css</button>
         </div>
       </div>
-      <div class="bookmark" aria-labelledby="Quizcard">
+      <div class="quizcard" aria-labelledby="Quizcard">
         <img
           src="img/bookmrk.png"
           alt="checked bookmark"
@@ -89,7 +94,7 @@
           <button class="category" aria-label="category css">#css</button>
         </div>
       </div>
-      <div class="bookmark" aria-labelledby="Quizcard">
+      <div class="quizcard" aria-labelledby="Quizcard">
         <img
           src="img/bookunmrk.png"
           alt="unchecked bookmark"

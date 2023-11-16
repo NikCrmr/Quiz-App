@@ -11,56 +11,109 @@
       <h1>Quiz App</h1>
     </header>
     <main>
-      <div class="bookmark">
-        <img src="img/bookmrk.png" alt="bookmark button" class="bkmrkicon" />
-        <h3>This is my Question?</h3>
-        <button onclick="show()" class="answer-button">Show Answer</button>
+      <div class="quizcard" aria-labelledby="Quizcard">
+        <img
+          src="img/bookmrk.png"
+          alt="checked bookmark"
+          class="bkmrkicon"
+          id="check_bkmrk"
+          onclick="changeBmrk()"
+        />
+        <h3>In what language is the phrase ‘Hakuna Matata’?</h3>
+        <button onclick="show()" class="answer-button" aria-label="Show Answer">
+          Show Answer
+        </button>
         <p class="showanswer" id="showanswer">
           here you will see the answer...
         </p>
         <div>
-          <button class="category">#html</button
-          ><button class="category">#flexbox</button
-          ><button class="category">#css</button>
+          <button class="category" aria-label="category html">#html</button>
+          <button class="category" aria-label="category flexbox">
+            #flexbox
+          </button>
+          <button class="category" aria-label="category css">#css</button>
         </div>
       </div>
-      <div class="bookmark">
-        <img src="img/bookmrk.png" alt="bookmark button" class="bkmrkicon" />
-        <h3>This is my Question?</h3>
-        <button class="answer-button" id="showanswer">Show Answer</button>
-        <p class="showanswer" id="showanswer">
+      <div class="quizcard" aria-labelledby="Quizcard">
+        <img
+          src="img/bookunmrk.png"
+          alt="unchecked bookmark"
+          class="bkmrkicon"
+          id="check_bkmrk2"
+          onclick="changeBmrk2()"
+        />
+        <h3>And what is the meaning of ‘Hakuna Matata’?</h3>
+        <button
+          class="answer-button"
+          onclick="show2()"
+          id=""
+          aria-label="Show Answer"
+        >
+          Show Answer
+        </button>
+        <p class="showanswer" id="showanswer2">
           here you will see the answer...
         </p>
         <div>
-          <button class="category">#html</button
-          ><button class="category">#flexbox</button
-          ><button class="category">#css</button>
+          <button class="category" aria-label="category html">#html</button>
+          <button class="category" aria-label="category flexbox">
+            #flexbox
+          </button>
+          <button class="category" aria-label="category css">#css</button>
         </div>
       </div>
-      <div class="bookmark">
-        <img src="img/bookmrk.png" alt="bookmark button" class="bkmrkicon" />
-        <h3>This is my Question?</h3>
-        <button class="answer-button" id="showanswer">Show Answer</button>
-        <p class="showanswer" id="showanswer">
+      <div class="quizcard" aria-labelledby="Quizcard">
+        <img
+          src="img/bookmrk.png"
+          alt="checked bookmark"
+          class="bkmrkicon"
+          id="check_bkmrk3"
+          onclick="changeBmrk3()"
+        />
+        <h3>What geometric shape is generally used for stop signs?</h3>
+        <button
+          onclick="show3()"
+          class="answer-button"
+          aria-label="Show Answer"
+        >
+          Show Answer
+        </button>
+        <p class="showanswer" id="showanswer3">
           here you will see the answer...
         </p>
         <div>
-          <button class="category">#html</button
-          ><button class="category">#flexbox</button
-          ><button class="category">#css</button>
+          <button class="category" aria-label="category html">#html</button>
+          <button class="category" aria-label="category flexbox">
+            #flexbox
+          </button>
+          <button class="category" aria-label="category css">#css</button>
         </div>
       </div>
-      <div class="bookmark">
-        <img src="img/bookmrk.png" alt="bookmark button" class="bkmrkicon" />
-        <h3>This is my Question?</h3>
-        <button class="answer-button" id="showanswer">Show Answer</button>
-        <p class="showanswer" id="showanswer">
+      <div class="quizcard" aria-labelledby="Quizcard">
+        <img
+          src="img/bookunmrk.png"
+          alt="unchecked bookmark"
+          class="bkmrkicon"
+          onclick="changeBmrk4()"
+          id="check_bkmrk4"
+        />
+        <h3>How many languages are written from right to left?</h3>
+        <button
+          onclick="show4()"
+          class="answer-button"
+          aria-label="Show Answer"
+        >
+          Show Answer
+        </button>
+        <p class="showanswer" id="showanswer4">
           here you will see the answer...
         </p>
         <div>
-          <button class="category">#html</button
-          ><button class="category">#flexbox</button
-          ><button class="category">#button</button>
+          <button class="category" aria-label="category html">#html</button>
+          <button class="category" aria-label="category flexbox">
+            #flexbox
+          </button>
+          <button class="category" aria-label="category css">#css</button>
         </div>
       </div>
     </main>
