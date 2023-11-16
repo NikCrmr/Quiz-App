@@ -1,6 +1,10 @@
+//Show the Answer Function!!
+
 function show() {
   document.getElementById("showanswer").innerHTML = "I am the answer!";
 }
+
+//Change the ColorMode to Dark Theme
 
 function colorMode() {
   const colorSwitch = document.body;
@@ -9,6 +13,7 @@ function colorMode() {
 
   /*document.body.style.backgroundColor = "orange";*/
 }
+//Switch the Bookmark between checked and unchecked
 
 function changeBmrk() {
   var image = document.getElementById("check_bkmrk");
@@ -21,7 +26,7 @@ function changeBmrk() {
   }
 }
 
-//COUNTER ***************
+//Bookmark Counter ***************
 const bookmarkButton = document.getElementById("check_bkmrk");
 const bookmarkCount = document.getElementById("bookmark-count");
 let count = 0;
