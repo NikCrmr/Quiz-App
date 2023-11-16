@@ -1,6 +1,8 @@
 /* MEDIA QUERRY SECTION */
 /*Mobile*/
-@media (min-width: 375px) {
+/*@media (min-width: 375px) {
+*/
+@media (min-width: 360px) {
   main {
     margin-top: 2rem;
   }
@@ -85,6 +87,25 @@
 }
 
 /*Media Query Cheats */
+
+@media (orientation: landscape) {
+  header {
+    height: 20vh;
+  }
+
+  header > h1 {
+    font-size: 1.5em;
+  }
+
+  header > img {
+    display: none;
+  }
+
+  footer {
+    height: 20vh;
+  }
+}
+
 @media (min-width: 320px) {
   /* smartphones, iPhone, portrait 480x320 phones */
   .quizcard {
