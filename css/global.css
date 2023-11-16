@@ -16,7 +16,17 @@ body {
   background-color: var(--main-bg);
 }
 
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
 header {
+  display: flex;
+  justify-content: center;
   width: 100%;
   padding-top: 1.875rem;
   padding-bottom: 1.875rem;
@@ -32,13 +42,18 @@ header {
 }
 
 h1 {
-  text-align: center;
-  flex-direction: column;
+  /*text-align: center;
+  flex-direction: column;*/
   color: white;
   -webkit-text-stroke-width: 1.5px;
   -webkit-text-stroke-color: black;
   font-weight: 800;
   font-size: 2.75rem;
+}
+
+header > img {
+  flex-direction: row;
+  width: 4rem;
 }
 
 footer {
@@ -75,10 +90,10 @@ nav a {
   padding: 0 2rem;
 }
 
-/*.nav_button:hover {
-    opacity: 50%;
-  }
-  
-  img header:hover {
-    width: 200%;
-  }*/
+/* .nav_button:hover {
+  opacity: 50%;
+}
+
+img header:hover {
+  width: 200%;
+} */

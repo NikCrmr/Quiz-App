@@ -3,14 +3,6 @@
 @import "profile.css";
 @import "components/media-query.css";
 
-main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-
 /*
 *** - JAVASCRIPT - *********
 TOGGLE COLOR-MODE JAVASCRIPT
