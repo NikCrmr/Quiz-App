@@ -87,9 +87,25 @@
 /*Media Query Cheats */
 @media (min-width: 320px) {
   /* smartphones, iPhone, portrait 480x320 phones */
+  .quizcard {
+    width: 95%;
+  }
+
+  .quizcard > h3 {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 1em;
+    color: black;
+  }
+
+  .quizcard > button {
+    margin-top: 5rem;
+  }
 }
 @media (min-width: 481px) {
   /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+  .quizcard > h3 {
+    top: 01rem;
+  }
 }
 
 @media (min-width: 519px) {
