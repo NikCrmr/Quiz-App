@@ -43,6 +43,7 @@ div > h3 {
 }
 
 .answer-button {
+  margin-top: 20%;
   background-color: yellow;
   color: black;
   font-weight: bold;
