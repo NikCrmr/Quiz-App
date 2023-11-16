@@ -1,7 +1,19 @@
 //Show the Answer Function!!
 
 function show() {
-  document.getElementById("showanswer").innerHTML = "I am the answer!";
+  document.getElementById("showanswer").innerHTML = "Swahili";
+}
+
+function show2() {
+  document.getElementById("showanswer2").innerHTML = "No worries*";
+}
+
+function show3() {
+  document.getElementById("showanswer3").innerHTML = "Octagon";
+}
+
+function show4() {
+  document.getElementById("showanswer4").innerHTML = "12";
 }
 
 //Change the ColorMode to Dark Theme
