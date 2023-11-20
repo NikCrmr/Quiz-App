@@ -2,27 +2,3 @@
 @import "components/card.css";
 @import "profile.css";
 @import "components/media-query.css";
-
-/*
-*** - JAVASCRIPT - *********
-TOGGLE COLOR-MODE JAVASCRIPT
-*/
-
-.alt-color {
-  background-color: black;
-  color: white;
-  letter-spacing: 0.1rem;
-  font-size: smaller;
-  -webkit-text-stroke-width: 0.013rem;
-  -webkit-text-stroke-color: greenyellow;
-}
-body.alt-color div {
-  background-color: black;
-}
-
-body.alt-color header {
-  background-color: black;
-}
-body.alt-color footer {
-  background-color: black;
-}
