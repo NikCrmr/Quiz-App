@@ -84,7 +84,7 @@ function colorMode() {
 }
 //Switch the Bookmark between checked and unchecked
 
-function changeBmrk() {
+function changeBookmark() {
   let bookmarkCount = 0;
   let image = document.getElementById("check_bkmrk");
   const bookmarkCounterTest = document.querySelector("[data-js=p-tag-counter]");
@@ -103,7 +103,7 @@ function changeBmrk() {
   }
 }
 
-function changeBmrk2() {
+function changeBookmark2() {
   let image = document.getElementById("check_bkmrk2");
   if (image.src.match("img/bookunmrk.png")) {
     image.src = "img/bookmrk.png";
@@ -114,7 +114,7 @@ function changeBmrk2() {
   }
 }
 
-function changeBmrk3() {
+function changeBookmark3() {
   let image = document.getElementById("check_bkmrk3");
   if (image.src.match("img/bookunmrk.png")) {
     image.src = "img/bookmrk.png";
@@ -125,7 +125,7 @@ function changeBmrk3() {
   }
 }
 
-function changeBmrk4() {
+function changeBookmark4() {
   let image = document.getElementById("check_bkmrk4");
   if (image.src.match("img/bookunmrk.png")) {
     image.src = "img/bookmrk.png";
