@@ -35,7 +35,7 @@ div > h3 {
   /* box-shadow: 2px 3.5px white;*/
 }
 
-.bkmrkicon {
+.bookmark-icon {
   position: absolute;
   right: -19px;
   top: -33px;
@@ -69,6 +69,9 @@ div > h3 {
 }
 
 .category {
+  font-size: 0.8em;
+  font-weight: 300;
+  padding: 0.2rem;
   background-color: white;
   border: 1px;
   border-color: white;
@@ -84,3 +87,4 @@ div > h3 {
 .category:hover {
   background-color: yellow;
 }
+/*Test*/

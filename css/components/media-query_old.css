@@ -1,8 +1,6 @@
 /* MEDIA QUERRY SECTION */
 /*Mobile*/
-/*@media (min-width: 375px) {
-*/
-@media (min-width: 360px) {
+@media (min-width: 375px) {
   main {
     margin-top: 2rem;
   }
@@ -10,7 +8,6 @@
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
-
   nav img {
     width: 14%;
   }
@@ -25,7 +22,6 @@
   h1 {
     font-size: 2rem;
   }
-
   /* Media Query Profile.html MOBILE-*/
   .profile {
     max-width: 95%;
@@ -51,7 +47,6 @@
     width: 7rem;
   }
 }
-
 /*MEDIA QUERY - LAPTOP and DESKTOP */
 @media (min-width: 961px) {
   .profile_img {
@@ -85,27 +80,7 @@
 @media (min-width: 1281px) {
   /* hi-res laptops and desktops  */
 }
-
 /*Media Query Cheats */
-
-@media (orientation: landscape) {
-  header {
-    height: 20vh;
-  }
-
-  header > h1 {
-    font-size: 1.5em;
-  }
-
-  header > img {
-    display: none;
-  }
-
-  footer {
-    height: 20vh;
-  }
-}
-
 @media (min-width: 320px) {
   /* smartphones, iPhone, portrait 480x320 phones */
   .quizcard {
@@ -144,7 +119,6 @@
     left: 45%;
     width: 14rem;
   }
-
   *.counter_div {
     left: 10%;
   }
@@ -157,7 +131,6 @@
     top: 46%;
     width: 14rem;
   }
-
   *.counter_div {
     left: 10%;
   }

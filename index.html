@@ -10,15 +10,16 @@
     <header>
       <h1 aria-labelledby="app-title">Quiz App</h1>
       <img src="img/question-145_128.gif" alt="arising questionmark" />
+      <p data-js="p-tag-counter">TEST</p>
     </header>
     <main>
       <div class="quizcard" aria-labelledby="Quizcard">
         <img
           src="img/bookmrk.png"
           alt="checked bookmark"
-          class="bkmrkicon"
+          class="bookmark-icon"
           id="check_bkmrk"
-          onclick="changeBmrk()"
+          onclick="changeBmrk();bookmarkChecked()"
         />
         <h3>In what language is the phrase ‘Hakuna Matata’?</h3>
         <button
@@ -33,18 +34,22 @@
           here you will see the answer...
         </p>
         <div>
-          <button class="category" aria-label="category html">#html</button>
-          <button class="category" aria-label="category flexbox">
-            #flexbox
-          </button>
-          <button class="category" aria-label="category css">#css</button>
+          <span class="category" aria-label="category html"
+            ><a href="">#html</a></span
+          >
+          <span class="category" aria-label="category flexbox">
+            <a href="">#flexbox</a>
+          </span>
+          <span class="category" aria-label="category css"
+            ><a href="">#css</a></span
+          >
         </div>
       </div>
       <div class="quizcard" aria-labelledby="Quizcard">
         <img
           src="img/bookunmrk.png"
           alt="unchecked bookmark"
-          class="bkmrkicon"
+          class="bookmark-icon"
           id="check_bkmrk2"
           onclick="changeBmrk2()"
         />
@@ -52,27 +57,31 @@
         <button
           class="answer-button"
           onclick="show2()"
-          id=""
+          data-js="answer-button2"
           aria-label="Show Answer"
         >
           Show Answer
         </button>
-        <p class="showanswer" id="showanswer2">
+        <p class="showanswer" id="showanswer2" data-js="answer-text2">
           here you will see the answer...
         </p>
         <div>
-          <button class="category" aria-label="category html">#html</button>
-          <button class="category" aria-label="category flexbox">
-            #flexbox
-          </button>
-          <button class="category" aria-label="category css">#css</button>
+          <span class="category" aria-label="category html"
+            ><a href="">#html</a></span
+          >
+          <span class="category" aria-label="category flexbox">
+            <a href="">#flexbox</a>
+          </span>
+          <span class="category" aria-label="category css"
+            ><a href="">#css</a></span
+          >
         </div>
       </div>
       <div class="quizcard" aria-labelledby="Quizcard">
         <img
           src="img/bookmrk.png"
           alt="checked bookmark"
-          class="bkmrkicon"
+          class="bookmark-icon"
           id="check_bkmrk3"
           onclick="changeBmrk3()"
         />
@@ -80,26 +89,31 @@
         <button
           onclick="show3()"
           class="answer-button"
+          data-js="answer-button3"
           aria-label="Show Answer"
         >
           Show Answer
         </button>
-        <p class="showanswer" id="showanswer3">
+        <p class="showanswer" id="showanswer3" data-js="answer-text3">
           here you will see the answer...
         </p>
         <div>
-          <button class="category" aria-label="category html">#html</button>
-          <button class="category" aria-label="category flexbox">
-            #flexbox
-          </button>
-          <button class="category" aria-label="category css">#css</button>
+          <span class="category" aria-label="category html"
+            ><a href="">#html</a></span
+          >
+          <span class="category" aria-label="category flexbox">
+            <a href="">#flexbox</a>
+          </span>
+          <span class="category" aria-label="category css"
+            ><a href="">#css</a></span
+          >
         </div>
       </div>
       <div class="quizcard" aria-labelledby="Quizcard">
         <img
           src="img/bookunmrk.png"
           alt="unchecked bookmark"
-          class="bkmrkicon"
+          class="bookmark-icon"
           onclick="changeBmrk4()"
           id="check_bkmrk4"
         />
@@ -107,42 +121,49 @@
         <button
           onclick="show4()"
           class="answer-button"
+          data-js="answer-button4"
           aria-label="Show Answer"
         >
           Show Answer
         </button>
-        <p class="showanswer" id="showanswer4">
+        <p class="showanswer" id="showanswer4" data-js="answer-text4">
           here you will see the answer...
         </p>
         <div>
-          <button class="category" aria-label="category html">#html</button>
-          <button class="category" aria-label="category flexbox">
-            #flexbox
-          </button>
-          <button class="category" aria-label="category css">#css</button>
+          <span class="category" aria-label="category html"
+            ><a href="">#html</a></span
+          >
+          <span class="category" aria-label="category flexbox">
+            <a href="">#flexbox</a>
+          </span>
+          <span class="category" aria-label="category css"
+            ><a href="">#css</a></span
+          >
         </div>
       </div>
     </main>
     <footer>
       <nav>
-        <a href="index.html"
+        <ul>
+<li></lo><a href="index.html"
           ><img
             src="img/home.png"
             alt="homepage button"
             class="nav_button_home"
-        /></a>
-        <a href="bookmark.html"
+        /></a></li>
+        <li><a href="bookmark.html"
           ><img
             src="img/bookmrk.png"
             alt="bookmark-page button"
             class="nav_button"
-        /></a>
-        <a href="profile.html"
+        /></a></li>
+        <li><a href="profile.html"
           ><img
             src="img/profile.png"
             alt="profile-page button"
             class="nav_button"
-        /></a>
+        /></a></li>
+      </ul>
       </nav>
     </footer>
     <script src="script.js"></script>
