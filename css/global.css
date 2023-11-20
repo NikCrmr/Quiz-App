@@ -96,6 +96,10 @@ nav ul {
   flex-direction: row;
   justify-content: space-evenly;
 }
+
+nav ul img {
+  width: 100%;
+}
 /* .nav_button:hover {
   opacity: 50%;
 }
