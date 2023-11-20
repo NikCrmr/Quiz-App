@@ -10,6 +10,7 @@
     <header>
       <h1 aria-labelledby="app-title">Quiz App</h1>
       <img src="img/question-145_128.gif" alt="arising questionmark" />
+      <p data-js="p-tag-counter">TEST</p>
     </header>
     <main>
       <div class="quizcard" aria-labelledby="Quizcard">
@@ -18,7 +19,7 @@
           alt="checked bookmark"
           class="bookmark-icon"
           id="check_bkmrk"
-          onclick="changeBmrk()"
+          onclick="changeBmrk();bookmarkChecked()"
         />
         <h3>In what language is the phrase ‘Hakuna Matata’?</h3>
         <button

@@ -86,13 +86,18 @@ function colorMode() {
 
 function changeBmrk() {
   let image = document.getElementById("check_bkmrk");
+  const bookmarkCounterTest = document.querySelector("[data-js=p-tag-counter]");
   if (image.src.match("img/bookunmrk.png")) {
     image.src = "img/bookmrk.png";
     console.log("first-if-bookmrk");
+    count++;
+    bookmarkCounterTest.innerText = count;
     //return 1;
   } else {
     image.src = "img/bookunmrk.png";
     console.log("else-bookunmrk");
+    count -= 2;
+    bookmarkCounterTest.innerText = count;
     //return -1;
   }
 }
@@ -142,3 +147,29 @@ bookmarkButton.addEventListener("click", () => {
 
 // <button id="likeButton">Like</button>
 // <span id="likeCount">0</span>
+
+/* klicke auf den bookmark > checked = +1 ; unchecked = -1.
+function bookmarksCounting(){
+  const bookmarkCounterTest= document.querySelector('[data-js=p-tag-counter]')
+  if(value==1){
+count++;
+bookmarkCounterTest.innerText = count;
+  } else if(value==-1){
+    count--;
+    bookmarkCounterTest.innerText = count;
+  }
+
+  ***2Funktionen Checked und Unchecked****
+
+  function bookmarkChecked(){
+  const bookmarkCounterTest= document.querySelector('[data-js=p-tag-counter]')
+count++;
+bookmarkCounterTest.innerText = count;
+
+
+function bookmarkUnchecked(){
+  const bookmarkCounterTest= document.querySelector('[data-js=p-tag-counter]'
+    count--;
+    bookmarkCounterTest.innerText = count;
+  }
+*/
