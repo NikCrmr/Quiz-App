@@ -86,7 +86,7 @@ function colorMode() {
 
 function changeBookmark() {
   let bookmarkCount = 0;
-  let image = document.getElementById("check_bkmrk");
+  let image = document.getElementById("check--bookmark");
   const bookmarkCounterTest = document.querySelector("[data-js=p-tag-counter]");
   if (image.src.match("img/bookunmrk.png")) {
     image.src = "img/bookmrk.png";
@@ -104,7 +104,7 @@ function changeBookmark() {
 }
 
 function changeBookmark2() {
-  let image = document.getElementById("check_bkmrk2");
+  let image = document.getElementById("check--bookmark2");
   if (image.src.match("img/bookunmrk.png")) {
     image.src = "img/bookmrk.png";
     console.log("first-if-bookmrk");
@@ -115,7 +115,7 @@ function changeBookmark2() {
 }
 
 function changeBookmark3() {
-  let image = document.getElementById("check_bkmrk3");
+  let image = document.getElementById("check--bookmark3");
   if (image.src.match("img/bookunmrk.png")) {
     image.src = "img/bookmrk.png";
     console.log("first-if-bookmrk");
@@ -126,7 +126,7 @@ function changeBookmark3() {
 }
 
 function changeBookmark4() {
-  let image = document.getElementById("check_bkmrk4");
+  let image = document.getElementById("check--bookmark4");
   if (image.src.match("img/bookunmrk.png")) {
     image.src = "img/bookmrk.png";
     console.log("first-if-bookmrk");
@@ -137,7 +137,7 @@ function changeBookmark4() {
 }
 
 //Bookmark Counter ***************
-const bookmarkButton = document.getElementById("check_bkmrk");
+const bookmarkButton = document.getElementById("check--bookmark");
 const bookmarkCount = document.getElementById("bookmark-count");
 let count = 0;
 
