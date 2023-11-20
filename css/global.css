@@ -90,6 +90,12 @@ nav a {
   padding: 0 2rem;
 }
 
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
 /* .nav_button:hover {
   opacity: 50%;
 }
