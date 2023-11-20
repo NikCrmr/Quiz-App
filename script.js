@@ -85,19 +85,20 @@ function colorMode() {
 //Switch the Bookmark between checked and unchecked
 
 function changeBmrk() {
+  let bookmarkCount = 0;
   let image = document.getElementById("check_bkmrk");
   const bookmarkCounterTest = document.querySelector("[data-js=p-tag-counter]");
   if (image.src.match("img/bookunmrk.png")) {
     image.src = "img/bookmrk.png";
     console.log("first-if-bookmrk");
-    count++;
-    bookmarkCounterTest.innerText = count;
+    bookmarkCount++;
+    bookmarkCounterTest.innerText = bookmarkCount;
     //return 1;
   } else {
     image.src = "img/bookunmrk.png";
     console.log("else-bookunmrk");
-    count -= 2;
-    bookmarkCounterTest.innerText = count;
+    bookmarkCount = bookmarkCount--;
+    bookmarkCounterTest.innerText = bookmarkCount;
     //return -1;
   }
 }
