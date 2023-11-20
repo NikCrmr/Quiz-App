@@ -69,6 +69,9 @@ div > h3 {
 }
 
 .category {
+  font-size: 0.8em;
+  font-weight: 300;
+  padding: 0.2rem;
   background-color: white;
   border: 1px;
   border-color: white;

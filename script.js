@@ -47,9 +47,11 @@ function changeBmrk() {
   if (image.src.match("img/bookunmrk.png")) {
     image.src = "img/bookmrk.png";
     console.log("first-if-bookmrk");
+    //return 1;
   } else {
     image.src = "img/bookunmrk.png";
     console.log("else-bookunmrk");
+    //return -1;
   }
 }
 
