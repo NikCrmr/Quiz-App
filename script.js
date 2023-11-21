@@ -75,13 +75,23 @@ function show4() {
 
 //Change the ColorMode to Dark Theme
 
-function colorMode() {
+function darkMode() {
   const colorSwitch = document.body;
 
   colorSwitch.classList.toggle("alt-color");
 
   /*document.body.style.backgroundColor = "orange";*/
 }
+
+//colorful Contrast mode
+function colorMode() {
+  const colorMode = document.body;
+
+  colorMode.classList.toggle("contrast-color");
+
+  /*document.body.style.backgroundColor = "orange";*/
+}
+
 //Switch the Bookmark between checked and unchecked
 
 function changeBookmark() {
