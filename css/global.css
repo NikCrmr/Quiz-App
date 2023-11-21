@@ -129,7 +129,17 @@ body.alt-color header {
   background-color: black;
   border: 1px dashed white;
 }
+
+body.alt-color header > h1 {
+  -webkit-text-stroke-width: 0.05rem;
+  -webkit-text-stroke-color: yellow;
+}
+
 body.alt-color footer {
   background-color: black;
   border: 1px dashed white;
+}
+body.alt-color footer img {
+  background-color: blue;
+  border-radius: 15px;
 }
