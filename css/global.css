@@ -127,7 +127,9 @@ body.alt-color div {
 
 body.alt-color header {
   background-color: black;
+  border: 1px dashed white;
 }
 body.alt-color footer {
   background-color: black;
+  border: 1px dashed white;
 }
