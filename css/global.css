@@ -144,6 +144,10 @@ body.alt-color footer img {
   border-radius: 15px;
 }
 
+body.alt-color .counter_div {
+  border: 2px dotted white;
+}
+
 /*High Contrast Mode*/
 
 .contrast-color {
@@ -175,4 +179,8 @@ body.contrast-color footer {
 body.contrast-color footer img {
   background-color: pink;
   border-radius: 15px;
+}
+
+body.contrast-color .counter_div {
+  border: 2px dotted white;
 }
