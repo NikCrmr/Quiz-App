@@ -75,18 +75,28 @@ function show4() {
 
 //Change the ColorMode to Dark Theme
 
-function colorMode() {
+function darkMode() {
   const colorSwitch = document.body;
 
   colorSwitch.classList.toggle("alt-color");
 
   /*document.body.style.backgroundColor = "orange";*/
 }
+
+//colorful Contrast mode
+function colorMode() {
+  const colorMode = document.body;
+
+  colorMode.classList.toggle("contrast-color");
+
+  /*document.body.style.backgroundColor = "orange";*/
+}
+
 //Switch the Bookmark between checked and unchecked
 
-function changeBmrk() {
+function changeBookmark() {
   let bookmarkCount = 0;
-  let image = document.getElementById("check_bkmrk");
+  let image = document.getElementById("check--bookmark");
   const bookmarkCounterTest = document.querySelector("[data-js=p-tag-counter]");
   if (image.src.match("img/bookunmrk.png")) {
     image.src = "img/bookmrk.png";
@@ -103,8 +113,8 @@ function changeBmrk() {
   }
 }
 
-function changeBmrk2() {
-  let image = document.getElementById("check_bkmrk2");
+function changeBookmark2() {
+  let image = document.getElementById("check--bookmark2");
   if (image.src.match("img/bookunmrk.png")) {
     image.src = "img/bookmrk.png";
     console.log("first-if-bookmrk");
@@ -114,8 +124,8 @@ function changeBmrk2() {
   }
 }
 
-function changeBmrk3() {
-  let image = document.getElementById("check_bkmrk3");
+function changeBookmark3() {
+  let image = document.getElementById("check--bookmark3");
   if (image.src.match("img/bookunmrk.png")) {
     image.src = "img/bookmrk.png";
     console.log("first-if-bookmrk");
@@ -125,8 +135,8 @@ function changeBmrk3() {
   }
 }
 
-function changeBmrk4() {
-  let image = document.getElementById("check_bkmrk4");
+function changeBookmark4() {
+  let image = document.getElementById("check--bookmark4");
   if (image.src.match("img/bookunmrk.png")) {
     image.src = "img/bookmrk.png";
     console.log("first-if-bookmrk");
@@ -137,7 +147,7 @@ function changeBmrk4() {
 }
 
 //Bookmark Counter ***************
-const bookmarkButton = document.getElementById("check_bkmrk");
+const bookmarkButton = document.getElementById("check--bookmark");
 const bookmarkCount = document.getElementById("bookmark-count");
 let count = 0;
 

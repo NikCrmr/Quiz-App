@@ -127,7 +127,52 @@ body.alt-color div {
 
 body.alt-color header {
   background-color: black;
+  border: 1px dashed white;
 }
+
+body.alt-color header > h1 {
+  -webkit-text-stroke-width: 0.05rem;
+  -webkit-text-stroke-color: yellow;
+}
+
 body.alt-color footer {
   background-color: black;
+  border: 1px dashed white;
+}
+body.alt-color footer img {
+  background-color: blue;
+  border-radius: 15px;
+}
+
+/*High Contrast Mode*/
+
+.contrast-color {
+  background-color: red;
+  color: yellow;
+  letter-spacing: 0.1rem;
+  font-size: smaller;
+  -webkit-text-stroke-width: 0.013rem;
+  -webkit-text-stroke-color: black;
+}
+body.contrast-color div {
+  background-color: red;
+}
+
+body.contrast-color header {
+  background-color: red;
+  border: 1px dashed white;
+}
+
+body.contrast-color header > h1 {
+  -webkit-text-stroke-width: 0.05rem;
+  -webkit-text-stroke-color: black;
+}
+
+body.contrast-color footer {
+  background-color: red;
+  border: 1px dashed white;
+}
+body.contrast-color footer img {
+  background-color: pink;
+  border-radius: 15px;
 }
