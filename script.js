@@ -88,6 +88,7 @@ function colorMode() {
   const colorMode = document.body;
 
   colorMode.classList.toggle("contrast-color");
+  //localStorage.setItem("contrast-color");
 
   /*document.body.style.backgroundColor = "orange";*/
 }
