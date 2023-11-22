@@ -1,4 +1,5 @@
 let darkMode = localStorage.getItem("darkMode");
+//he defines it here, so later he can compare it if its on or off!!!
 // its only stored locally on the computer 5MB
 //there is also session storage, which last only this session. but localStorage also goes beyond this session date
 // If the server side needs data >> cookie // only client side than localStorage ect.
