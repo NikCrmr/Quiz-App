@@ -1,5 +1,6 @@
 let modeNoir = localStorage.getItem("Darkmode");
 let modeColor = localStorage.getItem("Colormode");
+let modeStandard = localStorage.getItem("Standardmode");
 
 //Show the Answer Function!!
 
@@ -78,10 +79,11 @@ function show4() {
 
 //Change the ColorMode to Dark Theme
 //darkMode();
+
 function darkMode() {
   const colorSwitch = document.body;
   colorSwitch.classList.toggle("alt-color");
-  localStorage.clear;
+  localStorage.clear();
   localStorage.setItem("Darkmode", "On");
 }
 
@@ -95,13 +97,27 @@ if (modeNoir === "On") {
 function colorMode() {
   const colorMode = document.body;
   colorMode.classList.toggle("contrast-color");
-  localStorage.clear;
+  localStorage.clear();
   localStorage.setItem("Colormode", "On");
 }
 
 if (modeColor === "On") {
   const colorMode = document.body;
   colorMode.classList.toggle("contrast-color");
+}
+//StadardMode
+
+function standardMode() {
+  const standardMode = document.body;
+  standardMode.classList.remove("alt-color");
+  standardMode.classList.remove("contrast-color");
+  localStorage.setItem("Standardmode", "On");
+}
+
+if (modeStandard === "On") {
+  const standardMode = document.body;
+  standardMode.classList.remove("alt-color");
+  standardMode.classList.remove("contrast-color");
 }
 //Switch the Bookmark between checked and unchecked
 
