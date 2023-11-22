@@ -1,3 +1,6 @@
+let modeNoir = localStorage.getItem("Darkmode");
+let modeColor = localStorage.getItem("Colormode");
+
 //Show the Answer Function!!
 
 function show() {
@@ -74,24 +77,32 @@ function show4() {
 }
 
 //Change the ColorMode to Dark Theme
-
+//darkMode();
 function darkMode() {
   const colorSwitch = document.body;
-
   colorSwitch.classList.toggle("alt-color");
+  localStorage.clear;
+  localStorage.setItem("Darkmode", "On");
+}
 
-  /*document.body.style.backgroundColor = "orange";*/
+if (modeNoir === "On") {
+  console.log("mode noir if working");
+  const colorSwitch = document.body;
+  colorSwitch.classList.toggle("alt-color");
 }
 
 //colorful Contrast mode
 function colorMode() {
   const colorMode = document.body;
-
   colorMode.classList.toggle("contrast-color");
-
-  /*document.body.style.backgroundColor = "orange";*/
+  localStorage.clear;
+  localStorage.setItem("Colormode", "On");
 }
 
+if (modeColor === "On") {
+  const colorMode = document.body;
+  colorMode.classList.toggle("contrast-color");
+}
 //Switch the Bookmark between checked and unchecked
 
 function changeBookmark() {
