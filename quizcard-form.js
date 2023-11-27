@@ -6,6 +6,53 @@ const quizFormButton = document.querySelector(
   '[data-js="create-questions-button"]'
 );
 
+fucntion newQuizcard() {
+    //!!building the Quizcard!!
+    const body = document.querySelector('body');
+//   const main = document.querySelector('[data-js="main"]');
+  // Sticking The Building Blocks Together!!! Let's Play!!!
+  const quizCardContainer = document.createElement("article");
+  main.append.quizCardContainer;
+  quizCardContainer.classList.add("quizcard");
+  quizCardContainer.setAttribute("aria-labelledby", "Quizcard");
+  //quizcard Bookmark
+  const quizCardBookmark = document.createElement("img");
+  quizCardContainer.append.quizCardBookmark;
+  quizCardBookmark.classList.add("bookmark-icon");
+  //   quizCardBookmark.setAttribute("src", "img/bookmrk.png");
+  //   quizCardBookmark.setAttribute("alt", "checked bookmark");
+  quizCardBookmark.classList.add("bookmark-icon");
+  //   quizCardBookmark.setAttribute("id", "check--bookmark");
+  //   quizCardBookmark.setAttribute("onclick", "changeBookmark()");
+  //quizcard Question
+  const quizCardQuestion = document.createElement("h2");
+  quizCardContainer.append.quizCardQuestion;
+
+  //quizcard Button
+  const quizCardButton = document.createElement("button");
+  quizCardContainer.append.quizCardButton;
+  //   quizCardButton.setAttribute("onclick", "show()");
+  quizCardButton.classList.add("answer-button");
+  //   quizCardButton.setAttribute("data-js", "answer-button");
+  //   quizCardButton.setAttribute("aria-label", "Show Answer");
+
+  //quizcard Answer
+  const quizCardTags = document.createElement("span");
+  const quizCardAnswer = document.createElement("p");
+  quizCardContainer.append.quizCardAnswer;
+  quizCardAnswer.classList.add("showanswer");
+  //   quizCardAnswer.setAttribute("id", "showanswer");
+  //   quizCardAnswer.setAttribute("datajs", "answer-text");
+
+  //Quizcard div for tags
+  const quizCardTagsDiv = document.createElement("div");
+  quizCardContainer.append.quizCardTagsDiv;
+
+  //quizcard category-tags span-elements
+  const quizCardCategorySpans = document.createElement("span");
+  quizCardCategorySpans.classList.add("cetegory");
+}
+
 quizForm.addEventListener("submit", (event) => {
   event.preventDefault();
 
@@ -18,52 +65,19 @@ quizForm.addEventListener("submit", (event) => {
   const formAnswer = event.target.answer;
   const formTags = event.target.tags;
   //console.log(formQuestion);
+
+  
 });
 
-quizFormButton.addEventListener("click", () => {
-  //The New-Kids-For-Building a Quizcard
-  const main = document.querySelector('[data-js="main"]');
 
-  // Sticking The Building Blocks Together!!! Let's Play!!!
-  const quizCardContainer = document.createElement("article");
-  main.append.quizCardContainer;
-  quizCardContainer.classList.add("quizcard");
-  quizCardContainer.setAttribute("aria-labelledby", "Quizcard");
-  //quizcard Bookmark
-  const quizCardBookmark = document.createElement("img");
-  quizCardContainer.append.quizCardBookmark;
-  quizCardBookmark.classList.add("bookmark-icon");
-  quizCardBookmark.setAttribute("src", "img/bookmrk.png");
-  quizCardBookmark.setAttribute("alt", "checked bookmark");
-  quizCardBookmark.classList.add("bookmark-icon");
-  quizCardBookmark.setAttribute("id", "check--bookmark");
-  quizCardBookmark.setAttribute("onclick", "changeBookmark()");
 
-  //quizcard Question
-  const quizCardQuestion = document.createElement("h2");
-  quizCardContainer.append.quizCardQuestion;
+newQuizcard();
 
-  //quizcard Button
-  const quizCardButton = document.createElement("button");
-  quizCardContainer.append.quizCardButton;
-  quizCardButton.setAttribute("onclick", "show()");
-  quizCardButton.classList.add("answer-button");
-  quizCardButton.setAttribute("data-js", "answer-button");
-  quizCardButton.setAttribute("aria-label", "Show Answer");
 
-  //quizcard Answer
-  const quizCardTags = document.createElement("span");
-  const quizCardAnswer = document.createElement("p");
-  quizCardContainer.append.quizCardAnswer;
-  quizCardAnswer.classList.add("showanswer");
-  quizCardAnswer.setAttribute("id", "showanswer");
-  quizCardAnswer.setAttribute("datajs", "answer-text");
+newQuizcard();
 
-  //Quizcard div for tags
-  const quizCardTagsDiv = document.createElement("div");
-  quizCardContainer.append.quizCardTagsDiv;
 
-  //quizcard category-tags span-elements
-  const quizCardCategorySpans = document.createElement("span");
-  quizCardCategorySpans.classList.add("cetegory");
-});
+newQuizcard();
+
+
+newQuizcard();
