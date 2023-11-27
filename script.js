@@ -125,31 +125,47 @@ function changeBookmark() {
   let bookmarkCount = 0;
   let image = document.getElementById("check--bookmark");
   const bookmarkCounterTest = document.querySelector("[data-js=p-tag-counter]");
+  let state;
   if (image.src.match("img/bookunmrk.png")) {
     image.src = "img/bookmrk.png";
     console.log("first-if-bookmrk");
     bookmarkCount++;
     bookmarkCounterTest.innerText = bookmarkCount;
-    //return 1;
+    state = 1;
   } else {
     image.src = "img/bookunmrk.png";
     console.log("else-bookunmrk");
     bookmarkCount = bookmarkCount--;
     bookmarkCounterTest.innerText = bookmarkCount;
-    //return -1;
+    state = -1;
   }
+  console.log(state);
+  return state;
 }
+const bookmark_1 = Math.abs(changeBookmark());
 
 function changeBookmark2() {
   let image = document.getElementById("check--bookmark2");
+  let state;
   if (image.src.match("img/bookunmrk.png")) {
     image.src = "img/bookmrk.png";
     console.log("first-if-bookmrk");
+    state = 1;
   } else if (image.src.match("img/bookmrk.png")) {
     image.src = "img/bookunmrk.png";
     console.log("else-if-bookunmrk");
+    state = -1;
   }
+  return state;
 }
+const bookmark_2 = Math.abs(changeBookmark2());
+// console.log(bookmark_2);
+const bookmark_total = bookmark_1 + bookmark_2;
+// console.log bookmark_total;
+// console.log(bookmark_total);
+
+// const bookmarkCounterTest = document.querySelector("[data-js=p-tag-counter]");
+// bookmarkCounterTest.textContent = bookmark_total;
 
 function changeBookmark3() {
   let image = document.getElementById("check--bookmark3");
@@ -175,12 +191,12 @@ function changeBookmark4() {
 
 //Bookmark Counter ***************
 const bookmarkButton = document.getElementById("check--bookmark");
-const bookmarkCount = document.getElementById("bookmark-count");
+const bookmarkCount2 = document.getElementById("bookmark-count");
 let count = 0;
 
 bookmarkButton.addEventListener("click", () => {
   count++;
-  bookmarkCount.innerText = count;
+  bookmarkCount2.innerText = count;
 });
 
 // <button id="likeButton">Like</button>
