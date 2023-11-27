@@ -20,7 +20,6 @@ function newQuizcard() {
   //quizcard Bookmark
   const quizCardBookmark = document.createElement("img");
   quizCardBookmark.classList.add("bookmark-icon");
-  quizCardBookmark.classList.add("bookmark-icon");
   quizCardContainer.append(quizCardBookmark);
   quizCardBookmark.setAttribute("src", "img/bookmrk.png");
   quizCardBookmark.setAttribute("alt", "checked bookmark");
