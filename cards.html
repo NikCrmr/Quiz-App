@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>~ Quiz App ~</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1 aria-labelledby="app-title">Quiz App</h1>
+      <img src="img/question-145_128.gif" alt="arising questionmark" />
+      <p data-js="p-tag-counter">TEST</p>
+    </header>
+    <main>
+      <div class="quizcard" aria-labelledby="Quizcard">
+        <img
+          src="img/bookmrk.png"
+          alt="checked bookmark"
+          class="bookmark-icon"
+          id="check--bookmark"
+          onclick="changeBookmark()"
+        />
+        <h3>In what language is the phrase ‘Hakuna Matata’?</h3>
+        <button
+          onclick="show()"
+          class="answer-button"
+          data-js="answer-button"
+          aria-label="Show Answer"
+        >
+          Show Answer
+        </button>
+        <p class="showanswer" id="showanswer" data-js="answer-text">
+          here you will see the answer...
+        </p>
+        <div>
+          <span class="category" aria-label="category hakuna-matata"
+            ><a href="">#Hakuna-Matata</a></span
+          >
+          <span class="category" aria-label="category geometry">
+            <a href="">#geometry</a>
+          </span>
+          <span class="category" aria-label="category languages"
+            ><a href="">#languages</a></span
+          >
+        </div>
+      </div>
+      <div class="quizcard" aria-labelledby="Quizcard">
+        <img
+          src="img/bookunmrk.png"
+          alt="unchecked bookmark"
+          class="bookmark-icon"
+          id="check--bookmark2"
+          onclick="changeBookmark2()"
+        />
+        <h3>And what is the meaning of ‘Hakuna Matata’?</h3>
+        <button
+          class="answer-button"
+          onclick="show2()"
+          data-js="answer-button2"
+          aria-label="Show Answer"
+        >
+          Show Answer
+        </button>
+        <p class="showanswer" id="showanswer2" data-js="answer-text2">
+          here you will see the answer...
+        </p>
+        <div>
+          <span class="category" aria-label="category hakuna-matata"
+            ><a href="">#Hakuna-Matata</a></span
+          >
+          <span class="category" aria-label="category geometry">
+            <a href="">#geometry</a>
+          </span>
+          <span class="category" aria-label="category languages"
+            ><a href="">#languages</a></span
+          >
+        </div>
+      </div>
+      <div class="quizcard" aria-labelledby="Quizcard">
+        <img
+          src="img/bookmrk.png"
+          alt="checked bookmark"
+          class="bookmark-icon"
+          id="check--bookmark3"
+          onclick="changeBookmark3()"
+        />
+        <h3>What geometric shape is generally used for stop signs?</h3>
+        <button
+          onclick="show3()"
+          class="answer-button"
+          data-js="answer-button3"
+          aria-label="Show Answer"
+        >
+          Show Answer
+        </button>
+        <p class="showanswer" id="showanswer3" data-js="answer-text3">
+          here you will see the answer...
+        </p>
+        <div>
+          <span class="category" aria-label="category hakuna-matata"
+            ><a href="">#Hakuna-Matata</a></span
+          >
+          <span class="category" aria-label="category geometry">
+            <a href="">#geometry</a>
+          </span>
+          <span class="category" aria-label="category languages"
+            ><a href="">#languages</a></span
+          >
+        </div>
+      </div>
+      <div class="quizcard" aria-labelledby="Quizcard">
+        <img
+          src="img/bookunmrk.png"
+          alt="unchecked bookmark"
+          class="bookmark-icon"
+          onclick="changeBookmark4()"
+          id="check--bookmark4"
+        />
+        <h3>How many languages are written from right to left?</h3>
+        <button
+          onclick="show4()"
+          class="answer-button"
+          data-js="answer-button4"
+          aria-label="Show Answer"
+        >
+          Show Answer
+        </button>
+        <p class="showanswer" id="showanswer4" data-js="answer-text4">
+          here you will see the answer...
+        </p>
+        <div>
+          <span class="category" aria-label="category hakuna-matata"
+            ><a href="">#Hakuna-Matata</a></span
+          >
+          <span class="category" aria-label="category geometry">
+            <a href="">#geometry</a>
+          </span>
+          <span class="category" aria-label="category languages"
+            ><a href="">#languages</a></span
+          >
+        </div>
+      </div>
+      <br />
+      <br />
+      <section class="quiz-question-form">
+        <form data-js="question-form" aria-label="create quiz-questions form">
+          <label for="question">Your Question...</label>
+          <input id="question" type="text" name="question" />
+          <label for="answer">Your Answer...</label>
+          <input id="answer" type="text" name="answer" />
+          <label for="tags"> Your Tags...</label>
+          <input id="tags" type="text" name="tags" />
+          <button
+            type="submit"
+            data-js="create-questions-button"
+            class="create-question-button"
+          >
+            Submit
+          </button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html"
+              ><img
+                src="img/home.png"
+                alt="homepage button"
+                class="nav_button_home"
+            /></a>
+          </li>
+          <li>
+            <a href="bookmark.html"
+              ><img
+                src="img/bookmrk.png"
+                alt="bookmark-page button"
+                class="nav_button"
+            /></a>
+          </li>
+          <li>
+            <a href="profile.html"
+              ><img
+                src="img/profile.png"
+                alt="profile-page button"
+                class="nav_button"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+    <script src="script.js"></script>
+    <script src="quizcard-form.js"></script>
+  </body>
+</html>
