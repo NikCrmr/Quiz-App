@@ -1,8 +1,6 @@
 div {
   position: relative;
   /*height: 200px;*/
-  border-radius: 50px;
-  margin: 1.25rem;
 }
 
 div > h3 {
@@ -24,6 +22,7 @@ div > h3 {
 .quizcard {
   font-weight: 600;
   padding-top: 7.5%;
+  margin: 1.25rem;
   height: 310px;
   width: 80%;
   max-width: 450px;
@@ -32,6 +31,7 @@ div > h3 {
   text-align: center;
   position: relative;
   border: 0.5rem solid white;
+  border-radius: 50px;
   /* box-shadow: 2px 3.5px white;*/
 }
 
