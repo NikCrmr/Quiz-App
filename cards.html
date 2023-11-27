@@ -141,11 +141,16 @@
           >
         </div>
       </div>
+      <br />
+      <br />
       <section class="quiz-question-form">
         <form data-js="question-form" aria-label="create quiz-questions form">
           <label for="question">Your Question...</label>
-          <label>Your Answer...</label>
-          <label> Your Tags...</label>
+          <input id="question" type="text" name="question" />
+          <label for="answer">Your Answer...</label>
+          <input id="answer" type="text" name="answer" />
+          <label for="tags"> Your Tags...</label>
+          <input id="tags" type="text" name="tags" />
           <button
             type="submit"
             data-js="create-questions-button"
