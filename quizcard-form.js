@@ -21,6 +21,7 @@ function newQuizcard() {
   const quizCardBookmark = document.createElement("img");
   quizCardBookmark.classList.add("bookmark-icon");
   quizCardContainer.append(quizCardBookmark);
+  quizCardContainer.style.marginBottom = "6rem";
   quizCardBookmark.setAttribute("src", "img/bookmrk.png");
   quizCardBookmark.setAttribute("alt", "checked bookmark");
   quizCardBookmark.setAttribute("id", "check--bookmark");
@@ -28,6 +29,7 @@ function newQuizcard() {
 
   //quizcard Question
   const quizCardQuestion = document.createElement("h2");
+  quizCardQuestion.textContent = "Question?";
   quizCardContainer.append(quizCardQuestion);
 
   //quizcard Button
@@ -37,10 +39,12 @@ function newQuizcard() {
   quizCardButton.classList.add("answer-button");
   quizCardButton.setAttribute("data-js", "answer-button");
   quizCardButton.setAttribute("aria-label", "Show Answer");
+  quizCardButton.textContent = "Show Answer";
 
   //quizcard Answer
   const quizCardTags = document.createElement("span");
   const quizCardAnswer = document.createElement("p");
+  quizCardAnswer.textContent = "here you will see the answer...";
   quizCardContainer.append(quizCardAnswer);
   quizCardAnswer.classList.add("showanswer");
   quizCardAnswer.setAttribute("id", "showanswer"); //change to .id=...
@@ -53,6 +57,7 @@ function newQuizcard() {
   //quizcard category-tags span-elements
   const quizCardCategorySpans = document.createElement("span");
   quizCardCategorySpans.classList.add("cetegory");
+  quizCardCategorySpans.textContent = "Category";
 }
 
 //EventListener Form
