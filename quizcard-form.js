@@ -6,7 +6,10 @@ const quizFormButton = document.querySelector(
   '[data-js="create-questions-button"]'
 );
 
-function newQuizcard() {
+//**********************************
+//Function For Creating A QuizCard!!
+
+function newQuizcard(data) {
   //!!building the Quizcard!!
 
   const main = document.querySelector('[data-js="main"]');
@@ -21,13 +24,16 @@ function newQuizcard() {
   const quizCardBookmark = document.createElement("img");
   quizCardBookmark.classList.add("bookmark-icon");
   quizCardContainer.append(quizCardBookmark);
-  quizCardBookmark.setAttribute("src", "img/bookmrk.png");
-  quizCardBookmark.setAttribute("alt", "checked bookmark");
-  quizCardBookmark.setAttribute("id", "check--bookmark");
+  quizCardContainer.style.marginBottom = "6rem";
+  quizCardBookmark.src = "img/bookmrk.png";
+  quizCardBookmark.alt = "checked bookmark";
+  quizCardBookmark.id = "check--bookmark";
   quizCardBookmark.setAttribute("onclick", "changeBookmark()");
 
   //quizcard Question
   const quizCardQuestion = document.createElement("h2");
+  // console.log("Quizcard Question: ", data.question);
+  quizCardQuestion.textContent = data.question;
   quizCardContainer.append(quizCardQuestion);
 
   //quizcard Button
@@ -37,14 +43,35 @@ function newQuizcard() {
   quizCardButton.classList.add("answer-button");
   quizCardButton.setAttribute("data-js", "answer-button");
   quizCardButton.setAttribute("aria-label", "Show Answer");
+  quizCardButton.textContent = "Show Answer";
+  quizCardButton.id = "answer-button";
 
   //quizcard Answer
   const quizCardTags = document.createElement("span");
   const quizCardAnswer = document.createElement("p");
+  quizCardAnswer.innerText = data.answer;
   quizCardContainer.append(quizCardAnswer);
+  quizCardAnswer.classList.add("hideanswer");
   quizCardAnswer.classList.add("showanswer");
-  quizCardAnswer.setAttribute("id", "showanswer"); //change to .id=...
+  //quizCardAnswer.id = "showanswer";
   quizCardAnswer.setAttribute("datajs", "answer-text");
+
+  quizCardButton.addEventListener("click", function () {
+    // Your logic for handling the click event
+    // For example, you can toggle the visibility of the answerText
+    // if (quizCardAnswer.style.display === "none") {
+    //   quizCardAnswer.style.display === "block";
+    // } else {
+    //   quizCardAnswer.style.display === "none";
+    // }
+
+    quizCardAnswer.style.display =
+      quizCardAnswer.style.display === "none" ? "block" : "none";
+    quizCardButton.textContent =
+      quizCardButton.textContent === "Show Answer"
+        ? "Hide Answer"
+        : "Show Answer";
+  });
 
   //Quizcard div for tags
   const quizCardTagsDiv = document.createElement("div");
@@ -52,21 +79,29 @@ function newQuizcard() {
 
   //quizcard category-tags span-elements
   const quizCardCategorySpans = document.createElement("span");
+  quizCardCategorySpans.innerText = `#${data.tags}`;
   quizCardCategorySpans.classList.add("cetegory");
+  quizCardContainer.append(quizCardCategorySpans);
 }
 
 //EventListener Form
+//******************
 quizForm.addEventListener("submit", (event) => {
   event.preventDefault();
 
   const formData = new FormData(event.target);
   const data = Object.fromEntries(formData);
 
-  //console.log(data);
+  newQuizcard(data);
+});
 
-  const formQuestion = event.target.question;
-  const formAnswer = event.target.answer;
-  const formTags = event.target.tags;
-  //console.log(formTags);
-  newQuizcard();
+// const test = {
+//   question: "test - question",
+//   answer: 123,
+//   tags: "tagtag",
+// };
+
+const answerButtonFunction = document.getElementById("answer-button");
+answerButtonFunction.addEventListener("click", () => {
+  quizCardButton.textContent = "Hide Answer";
 });

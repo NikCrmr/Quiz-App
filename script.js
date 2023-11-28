@@ -8,7 +8,7 @@ function show() {
   //test new if else code
   let answerButton = document.querySelector('[data-js="answer-button"]');
   let answerText = document.querySelector('[data-js="answer-text"]');
-  console.log("variables created");
+  console.log("show1()", "variables created");
   if (answerButton.textContent.match("Show Answer")) {
     console.log("It is a match!");
     document.getElementById("showanswer").innerHTML = "Swahili";
