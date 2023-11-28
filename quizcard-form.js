@@ -6,7 +6,10 @@ const quizFormButton = document.querySelector(
   '[data-js="create-questions-button"]'
 );
 
-function newQuizcard() {
+//**********************************
+//Function For Creating A QuizCard!!
+
+function newQuizcard(data) {
   //!!building the Quizcard!!
 
   const main = document.querySelector('[data-js="main"]');
@@ -29,7 +32,8 @@ function newQuizcard() {
 
   //quizcard Question
   const quizCardQuestion = document.createElement("h2");
-  quizCardQuestion.textContent = "Question?";
+  // console.log("Quizcard Question: ", data.question);
+  quizCardQuestion.textContent = data.question;
   quizCardContainer.append(quizCardQuestion);
 
   //quizcard Button
@@ -44,7 +48,7 @@ function newQuizcard() {
   //quizcard Answer
   const quizCardTags = document.createElement("span");
   const quizCardAnswer = document.createElement("p");
-  quizCardAnswer.textContent = "here you will see the answer...";
+  quizCardAnswer.textContent = data.answer.value;
   quizCardContainer.append(quizCardAnswer);
   quizCardAnswer.classList.add("showanswer");
   quizCardAnswer.setAttribute("id", "showanswer"); //change to .id=...
@@ -56,23 +60,27 @@ function newQuizcard() {
 
   //quizcard category-tags span-elements
   const quizCardCategorySpans = document.createElement("span");
-  quizCardCategorySpans.textContent = "#category";
+  quizCardCategorySpans.textContent = data.tags;
   quizCardCategorySpans.classList.add("cetegory");
   quizCardContainer.append(quizCardCategorySpans);
 }
 
 //EventListener Form
+//******************
 quizForm.addEventListener("submit", (event) => {
   event.preventDefault();
 
   const formData = new FormData(event.target);
   const data = Object.fromEntries(formData);
 
-  //console.log(data);
-
-  const formQuestion = event.target.question;
-  const formAnswer = event.target.answer;
-  const formTags = event.target.tags;
-  //console.log(formTags);
-  newQuizcard();
+  console.log(formTags);
+  newQuizcard(data);
 });
+
+// const test = {
+//   question: "test - question",
+//   answer: 123,
+//   tags: "tagtag",
+// };
+
+// newQuizcard(test);
