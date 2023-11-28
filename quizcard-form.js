@@ -25,9 +25,9 @@ function newQuizcard(data) {
   quizCardBookmark.classList.add("bookmark-icon");
   quizCardContainer.append(quizCardBookmark);
   quizCardContainer.style.marginBottom = "6rem";
-  quizCardBookmark.setAttribute("src", "img/bookmrk.png");
-  quizCardBookmark.setAttribute("alt", "checked bookmark");
-  quizCardBookmark.setAttribute("id", "check--bookmark");
+  quizCardBookmark.src = "img/bookmrk.png";
+  quizCardBookmark.alt = "checked bookmark";
+  quizCardBookmark.id = "check--bookmark";
   quizCardBookmark.setAttribute("onclick", "changeBookmark()");
 
   //quizcard Question
@@ -44,15 +44,34 @@ function newQuizcard(data) {
   quizCardButton.setAttribute("data-js", "answer-button");
   quizCardButton.setAttribute("aria-label", "Show Answer");
   quizCardButton.textContent = "Show Answer";
+  quizCardButton.id = "answer-button";
 
   //quizcard Answer
   const quizCardTags = document.createElement("span");
   const quizCardAnswer = document.createElement("p");
-  quizCardAnswer.textContent = data.answer.value;
+  quizCardAnswer.innerText = data.answer;
   quizCardContainer.append(quizCardAnswer);
+  quizCardAnswer.classList.add("hideanswer");
   quizCardAnswer.classList.add("showanswer");
-  quizCardAnswer.setAttribute("id", "showanswer"); //change to .id=...
+  //quizCardAnswer.id = "showanswer";
   quizCardAnswer.setAttribute("datajs", "answer-text");
+
+  quizCardButton.addEventListener("click", function () {
+    // Your logic for handling the click event
+    // For example, you can toggle the visibility of the answerText
+    // if (quizCardAnswer.style.display === "none") {
+    //   quizCardAnswer.style.display === "block";
+    // } else {
+    //   quizCardAnswer.style.display === "none";
+    // }
+
+    quizCardAnswer.style.display =
+      quizCardAnswer.style.display === "none" ? "block" : "none";
+    quizCardButton.textContent =
+      quizCardButton.textContent === "Show Answer"
+        ? "Hide Answer"
+        : "Show Answer";
+  });
 
   //Quizcard div for tags
   const quizCardTagsDiv = document.createElement("div");
@@ -60,7 +79,7 @@ function newQuizcard(data) {
 
   //quizcard category-tags span-elements
   const quizCardCategorySpans = document.createElement("span");
-  quizCardCategorySpans.textContent = data.tags;
+  quizCardCategorySpans.innerText = `#${data.tags}`;
   quizCardCategorySpans.classList.add("cetegory");
   quizCardContainer.append(quizCardCategorySpans);
 }
@@ -73,7 +92,6 @@ quizForm.addEventListener("submit", (event) => {
   const formData = new FormData(event.target);
   const data = Object.fromEntries(formData);
 
-  console.log(formTags);
   newQuizcard(data);
 });
 
@@ -83,4 +101,7 @@ quizForm.addEventListener("submit", (event) => {
 //   tags: "tagtag",
 // };
 
-// newQuizcard(test);
+const answerButtonFunction = document.getElementById("answer-button");
+answerButtonFunction.addEventListener("click", () => {
+  quizCardButton.textContent = "Hide Answer";
+});
