@@ -86,6 +86,11 @@ footer {
   max-width: 56px;
 }
 
+.nav_button_add-question {
+  border: 3px dotted rgb(255, 255, 255);
+  max-width: 56px;
+}
+
 nav a {
   padding: 0 2rem;
 }
