@@ -56,8 +56,9 @@ function newQuizcard() {
 
   //quizcard category-tags span-elements
   const quizCardCategorySpans = document.createElement("span");
+  quizCardCategorySpans.textContent = "#category";
   quizCardCategorySpans.classList.add("cetegory");
-  quizCardCategorySpans.textContent = "Category";
+  quizCardContainer.append(quizCardCategorySpans);
 }
 
 //EventListener Form
