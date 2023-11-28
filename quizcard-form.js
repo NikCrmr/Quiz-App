@@ -6,6 +6,18 @@ const quizFormButton = document.querySelector(
   '[data-js="create-questions-button"]'
 );
 
+//foldable Cards
+const foldCards = document.querySelector('[data-js="foldable-cards"]');
+const foldCardsButton = document.querySelector('[data-js="fold-cards-button"]');
+
+foldCardsButton.addEventListener("click", () => {
+  if (foldCards.style.display === "none") {
+    foldCards.style.display = "block";
+  } else {
+    foldCards.style.display = "none";
+  }
+});
+
 //**********************************
 //Function For Creating A QuizCard!!
 
@@ -104,4 +116,40 @@ quizForm.addEventListener("submit", (event) => {
 const answerButtonFunction = document.getElementById("answer-button");
 answerButtonFunction.addEventListener("click", () => {
   quizCardButton.textContent = "Hide Answer";
+});
+
+//Form Left-Characters-Counter
+//****************************
+
+//Input
+const questionTextField = document.querySelector('[data-js="question"]');
+const answerTextField = document.querySelector('[data-js="answer"]');
+const tagsTextField = document.querySelector('[data-js="tags"]');
+//Output
+const questionCharactersLeft = document.querySelector(
+  '[data-js="question-characters"]'
+);
+const answerCharactersLeft = document.querySelector(
+  '[data-js="answer-characters"]'
+);
+const tagsCharactersLeft = document.querySelector(
+  '[data-js="tags-characters"]'
+);
+
+//**** */
+const maxLengthQuestion = questionTextField.getAttribute("maxlength");
+const maxLengthAnswer = answerTextField.getAttribute("maxlength");
+const maxLengthTags = tagsTextField.getAttribute("maxlength");
+
+//EventListerners
+questionTextField.addEventListener("input", () => {
+  console.log("question");
+});
+
+questionTextField.addEventListener("input", () => {
+  console.log("answer");
+});
+
+questionTextField.addEventListener("input", () => {
+  console.log("tags");
 });
