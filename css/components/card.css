@@ -36,6 +36,10 @@ div > h3 {
   /* box-shadow: 2px 3.5px white;*/
 }
 
+/*.quizcards__hide {
+  display: none;
+}*/
+
 .bookmark-icon {
   position: absolute;
   right: -19px;

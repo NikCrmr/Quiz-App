@@ -122,9 +122,9 @@ answerButtonFunction.addEventListener("click", () => {
 //****************************
 
 //Input
-const questionTextField = document.querySelector('[data-js="question"]');
-const answerTextField = document.querySelector('[data-js="answer"]');
-const tagsTextField = document.querySelector('[data-js="tags"]');
+const questionTextField = document.querySelector('[data-js="question-input"]');
+const answerTextField = document.querySelector('[data-js="answer-input"]');
+const tagsTextField = document.querySelector('[data-js="tags-input"]');
 //Output
 const questionCharactersLeft = document.querySelector(
   '[data-js="question-characters"]'
@@ -136,20 +136,20 @@ const tagsCharactersLeft = document.querySelector(
   '[data-js="tags-characters"]'
 );
 
-//**** */
-const maxLengthQuestion = questionTextField.getAttribute("maxlength");
-const maxLengthAnswer = answerTextField.getAttribute("maxlength");
-const maxLengthTags = tagsTextField.getAttribute("maxlength");
-
 //EventListerners
-questionTextField.addEventListener("input", () => {
-  console.log("question");
+questionTextField.addEventListener("input", (event) => {
+  // currentCharacterNumber = event.target.value.length;
+  // questionCharactersLeft.textContent = 100 - currentCharacterNumber;
+  questionCharactersLeft.innerHTML = event.target.value.length + " /100";
+  console.log(event.target.value.length);
 });
 
-questionTextField.addEventListener("input", () => {
-  console.log("answer");
+answerTextField.addEventListener("input", (event) => {
+  const currentCharacterNumber = event.target.value.length;
+  answerCharactersLeft.textContent = 100 - currentCharacterNumber;
 });
 
-questionTextField.addEventListener("input", () => {
-  console.log("tags");
+tagsTextField.addEventListener("input", (event) => {
+  const currentCharacterNumber = event.target.value.length;
+  tagsCharactersLeft.textContent = 100 - currentCharacterNumber;
 });
