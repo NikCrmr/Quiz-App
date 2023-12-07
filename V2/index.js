@@ -1,5 +1,5 @@
 //fetsch die Daten
-const quizTrivia = "https://opentdb.com/api.php?amount=50&type=boolean";
+const quizTrivia = "https://opentdb.com/api.php?amount=100&type=boolean";
 const catFacts = "https://cat-fact.herokuapp.com/facts";
 
 async function fetchQuizContent() {
