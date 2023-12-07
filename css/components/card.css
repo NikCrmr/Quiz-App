@@ -20,6 +20,31 @@ div > h3 {
   font-weight: bold;
 }
 
+.question {
+  position: absolute;
+  display: :flex;
+  
+  top: 2.3rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  padding: 0.2rem 0.2rem 0.2rem .02rem;
+  padding-bottom: 1rem;
+  color: black;
+  -webkit-text-stroke-width: 0.02rem;
+  -webkit-text-stroke-color: white;
+  /*font-size: 1.59rem;*/
+  letter-spacing: 0.055rem;
+  word-spacing: 0.43rem;
+  line-height: 125%;
+  font-weight: bold;
+}
+
+.question-size {
+  font-size: 1rem;
+}
+/*Same as div >h3 
+*/
+
 .quizcard {
   font-weight: 600;
   padding-top: 7.5%;
@@ -28,13 +53,17 @@ div > h3 {
   width: 80%;
   max-width: 450px;
   align-self: center;
-  background-color: limegreen;
+  background-color: lightgreen;
   text-align: center;
   position: relative;
   border: 0.5rem solid white;
   border-radius: 50px;
   /* box-shadow: 2px 3.5px white;*/
 }
+
+/*.quizcards__hide {
+  display: none;
+}*/
 
 .bookmark-icon {
   position: absolute;
